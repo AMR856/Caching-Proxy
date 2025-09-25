@@ -1,7 +1,6 @@
 #!/usr/bin/node
 const minimist = require("minimist");
 const args = minimist(process.argv.slice(2));
-console.log(args);
 const http = require("http");
 const https = require("https");
 const { URL } = require("url");
