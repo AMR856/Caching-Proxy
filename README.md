@@ -34,6 +34,8 @@ node index.js --port=3000 --origin=http://dummyjson.com --redirect=10
 
 * `--origin <url>`
   Origin server to forward requests to. Default: `http://dummyjson.com`.
+* `--redirect`
+  The number of allowed redirections
 
 * `--clear-cache`
   Clears the cache and exits.
