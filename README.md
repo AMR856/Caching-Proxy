@@ -1,6 +1,3 @@
-Here you go — a clean **README.md** you can copy directly:
-
-````markdown
 # Proxy Caching Server
 
 A simple **HTTP proxy server** written in Node.js that forwards requests to an origin server, follows redirects, and caches responses on disk for faster subsequent access.
@@ -20,7 +17,7 @@ Clone the repo and install dependencies:
 git clone https://github.com/your-username/proxy-cache-server.git
 cd proxy-cache-server
 npm install
-````
+
 
 ## 🚀 Usage
 
