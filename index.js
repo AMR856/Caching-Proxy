@@ -8,6 +8,7 @@ const { URL } = require("url");
 const fs = require("fs");
 const path = require("path");
 const port = args.port ||3000;
+const maxRedirectionTimes = args.redirect || 5;
 const origin = args.origin || "http://dummyjson.com";
 const clearCache = args['clear-cache'];
 const cacheDir = path.join(__dirname, "cache-files");
@@ -31,7 +32,7 @@ const followRedirect = (reqOptions, clientReq, clientRes, url, originURL, depth 
     if (redirectionList.includes(originRes.statusCode)) {
       const location = originRes.headers.location;
 
-      if (depth > 5) {
+      if (depth > maxRedirectionTimes) {
         clientRes.writeHead(508);
         return clientRes.end("Too many redirects");
       }
