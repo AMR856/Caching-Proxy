@@ -75,4 +75,4 @@ node index.js --clear-cache
    * Redirects are followed if necessary.
    * The response is cached and sent back to the client.
 
-Solution for Caching Proxy Project for **https://roadmap.sh/projects/caching-server**
+Solution for Caching Proxy Project **https://roadmap.sh/projects/caching-server**
